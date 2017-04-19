@@ -5,7 +5,8 @@
        (click)="setSelectedVideo(i)"
        *ngFor="let video of videoList; let i = index">
     <div class="panel-body">
-      {{video.title}}
+      <app-video [videoData]="video"></app-video>
     </div>
   </div>
+
 </div>

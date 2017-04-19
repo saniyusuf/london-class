@@ -1,8 +1,6 @@
-/* SystemJS module definition */
-declare var module: NodeModule;
-interface NodeModule {
-  id: string;
-}
+/**
+ * Created by sani on 19/04/2017.
+ */
 
 export interface IView {
   age: number;

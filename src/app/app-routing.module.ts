@@ -10,6 +10,7 @@ import { VideoViewerComponent } from './video-viewer/video-viewer.component';
 import { VideoFiltersComponent } from './video-filters/video-filters.component';
 import { StatGraphsComponent } from './stat-graphs/stat-graphs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,8 @@ const routes: Routes = [
     VideoViewerComponent,
     VideoFiltersComponent,
     StatGraphsComponent,
-    DashboardComponent
+    DashboardComponent,
+    VideoComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

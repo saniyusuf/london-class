@@ -1,3 +1,8 @@
-<p>
-  video-list works!
-</p>
+
+<div class="panel-body">
+  <div class="panel panel-primary" *ngFor="let video of videoList">
+    <div class="panel-body">
+      {{video.title}}
+    </div>
+  </div>
+</div>

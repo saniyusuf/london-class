@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class VideoListComponent implements OnInit {
 
   public videoList = VIDEOS;
+  public selectedVideoIndex = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setSelectedVideo(selectedVideoIndex){
+    this.selectedVideoIndex = selectedVideoIndex;
   }
 
 }

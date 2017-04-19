@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+.selected-video {
+  background: coral;
+  transition: background 1000ms 60ms;
+}

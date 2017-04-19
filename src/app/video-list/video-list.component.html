@@ -1,6 +1,9 @@
 
 <div class="panel-body">
-  <div class="panel panel-primary" *ngFor="let video of videoList">
+  <div class="panel panel-primary"
+       [class.selected-video]="i == selectedVideoIndex"
+       (click)="setSelectedVideo(i)"
+       *ngFor="let video of videoList; let i = index">
     <div class="panel-body">
       {{video.title}}
     </div>

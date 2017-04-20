@@ -11,6 +11,7 @@ import { VideoFiltersComponent } from './video-filters/video-filters.component';
 import { StatGraphsComponent } from './stat-graphs/stat-graphs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VideoComponent } from './video/video.component';
+import { VideoService } from './video.service';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     CommonModule
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [VideoService]
 })
 export class AppRoutingModule { }
